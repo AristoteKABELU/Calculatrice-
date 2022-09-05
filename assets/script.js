@@ -38,4 +38,16 @@ function result()
     document.querySelector('.saisie').textContent = document.querySelector('.resultat').textContent;
 }
 
+function randomNumber(number)
+{
+    return Math.floor(Math.random()*(number + 1));
+}
 
+function random_backgroundColor()
+{
+    let first_color = 'rgb(' + randomNumber(255) + ',' + randomNumber(255) + ',' + randomNumber(255) + ')';
+    let second_color = 'rgb(' + randomNumber(255) + ',' + randomNumber(255) + ',' + randomNumber(255) + ')';
+    let degrad = 'linear-gradient(' + randomNumber(360) + 'deg,'+ first_color +',' + second_color +')';
+
+    document.body.style.background =  degrad;
+}

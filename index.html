@@ -5,46 +5,49 @@
       <title> Ma page </title>
 	  <link rel="stylesheet" href="style.css">
 	  <script src="./assets/script.js" defer></script>
+	  <script src="../Background Random/script.js" defer></script>
     </head>
     <body>
-		<div class="btns">
+		<div>
 			<p class="saisie"></p>
 			<p class="resultat"></p>
-			<div class="btns_ligne1">
-				<input type="button" name="button" class="btn un" value="1" onclick= "input_value('1')" >
-				<input type="button" name="button" class="btn deux" value="2" onclick= "input_value('2')">
-				<input type="button" name="button" class="btn trois" value="3" onclick= "input_value('3')">
-				<input type="button" name="button" class="btn addition" value="+" onclick= "input_value('+')">
+			<div>
+				<input type="button" name="button"  value="1" onclick= "input_value('1')" >
+				<input type="button" name="button"  value="2" onclick= "input_value('2')">
+				<input type="button" name="button"  value="3" onclick= "input_value('3')">
+				<input type="button" name="button"  value="+" onclick= "input_value('+')">
 			</div>
-			<div class="btns_ligne2">
-				<input type="button" name="button" class="btn quatre" value="4" onclick= "input_value('4')">
-				<input type="button" name="button" class="btn cinq" value="5" onclick= "input_value('5')">
-				<input type="button" name="button" class="btn six" value="6" onclick= "input_value('6')">
-				<input type="button" name="button" class="btn soustraction" value="-" onclick= "input_value('-')">
+			<div>
+				<input type="button" name="button"  value="4" onclick= "input_value('4')">
+				<input type="button" name="button"  value="5" onclick= "input_value('5')">
+				<input type="button" name="button"  value="6" onclick= "input_value('6')">
+				<input type="button" name="button"  value="-" onclick= "input_value('-')">
 			</div>
-			<div class="btns_ligne3">
-				<input type="button" name="button" class="btn sept" value="7" onclick= "input_value('7')">
-				<input type="button" name="button" class="btn huit" value="8" onclick= "input_value('8')">
-				<input type="button" name="button" class="btn neuf" value="9" onclick= "input_value('9')">
-				<input type="button" name="button" class="btn multiplication" value="x" onclick= "input_value('*')">
+			<div>
+				<input type="button" name="button"  value="7" onclick= "input_value('7')">
+				<input type="button" name="button"  value="8" onclick= "input_value('8')">
+				<input type="button" name="button"  value="9" onclick= "input_value('9')">
+				<input type="button" name="button"  value="x" onclick= "input_value('*')">
 			</div>
-			<div class="btns_ligne4">
-				<input type="button" name="button" class="btn cos" value="cos" onclick="make_operation(Math.cos)" >
-				<input type="button" name="button" class="btn zero" value="0" onclick= "input_value('0')">
-				<input type="button" name="button" class="btn egale" value="=" onclick="result()">
-				<input type="button" name="button" class="btn division" value="/" onclick= "input_value('/')">
+			<div>
+				<input type="button" name="button"  value="cos" onclick="make_operation(Math.cos)" >
+				<input type="button" name="button"  value="0" onclick= "input_value('0')">
+				<input type="button" name="button"  value="=" onclick="result(), random_backgroundColor()">
+				<input type="button" name="button"  value="/" onclick= "input_value('/')">
 			</div>
-			<div class="btns_ligne5">
-				<input type="button" name="button" class="btn sin" value="sin" onclick="make_operation(Math.sin)">
-				<input type="button" name="button" class="btn tang" value="tang" onclick="make_operation(Math.tan)">
-				<input type="button" name="button" class="btn log" value="log" onclick="make_operation(Math.log)">
-				<input type="button" name="button" class="btn sup" value="sup" onclick="document.querySelector('.saisie').textContent = '';">
+			<div>
+				<input type="button" name="button"  value="sin" onclick="make_operation(Math.sin)">
+				<input type="button" name="button"  value="tang" onclick="make_operation(Math.tan)">
+				<input type="button" name="button"  value="log" onclick="make_operation(Math.log)">
+				<input type= "button" name="button" value="C" onclick= "">
 			</div>
-			<div class="btns_ligne6">
-				<!-- <input type="button" name="button" class="pk" value="Rien"> -->	
-				<!-- <input type= "button" name="button" class="btn colorback" value="color"> -->
-				<!-- <input type="button" name="button" class="btn cotang" value="cotang"> -->
-				<!-- <input type="button" name="button" class="btn factoriel" value="fac"> -->
+			<div>
+				<input type="button" name="button" value="(" onclick= "input_value('(')">
+				<input type="button" name="button" value=")" onclick= "input_value(')')">
+				<input type= "button" name="button" value="color" onclick="random_backgroundColor()">
+				<input type="button" name="button"  value="sup" onclick="document.querySelector('.saisie').textContent = '';">
+				<!-- <input type="button" name="button"  cotang" value="cotang"> -->
+				<!-- <input type="button" name="button"  factoriel" value="fac"> -->
 			</div>
 		</div>
 	</div>
